@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Boîte à outils JavaScript</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body class="bg-light">
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container">
+      <span class="navbar-brand">🧰 Boîte à outils JavaScript</span>
+    </div>
+  </nav>
+
+  <main class="container py-4">
+    <div class="row g-4">
+      <!-- Carte 1 : dénombrement -->
+      <div class="col-lg-6">
+        <div class="card h-100"><div class="card-body">
+          <h2 class="h5">🎲 Dénombrement</h2>
+          <div class="row g-2">
+            <div class="col"><input id="n" type="number" class="form-control" placeholder="n"></div>
+            <div class="col"><input id="k" type="number" class="form-control" placeholder="k"></div>
+            <div class="col-auto"><button id="btn-denombrement" class="btn btn-primary">Calculer</button></div>
+          </div>
+          <div id="res-denombrement" class="d-none"></div>
+        </div></div>
+      </div>
+
+      <!-- Carte 2 : PGCD et PPCM -->
+      <div class="col-lg-6">
+        <div class="card h-100"><div class="card-body">
+          <h2 class="h5">➗ PGCD et PPCM</h2>
+          <div class="row g-2">
+            <div class="col"><input id="a" type="number" class="form-control" placeholder="a"></div>
+            <div class="col"><input id="b" type="number" class="form-control" placeholder="b"></div>
+            <div class="col-auto"><button id="btn-pgcd" class="btn btn-primary">Calculer</button></div>
+          </div>
+          <div id="res-pgcd" class="d-none"></div>
+        </div></div>
+      </div>
+
+      <!-- Carte 3 : miroir et palindrome -->
+      <div class="col-lg-6">
+        <div class="card h-100"><div class="card-body">
+          <h2 class="h5">🪞 Miroir et palindrome</h2>
+          <div class="row g-2">
+            <div class="col"><input id="texte-miroir" type="text" class="form-control" placeholder="Mot, phrase ou date (ex. 22/02/2022)"></div>
+            <div class="col-auto"><button id="btn-miroir" class="btn btn-primary">Inverser</button></div>
+          </div>
+          <div id="res-miroir" class="d-none"></div>
+        </div></div>
+      </div>
+
+      <!-- Carte 4 : chiffre de César -->
+      <div class="col-lg-6">
+        <div class="card h-100"><div class="card-body">
+          <h2 class="h5">🔐 Chiffre de César</h2>
+          <textarea id="texte-cesar" class="form-control mb-2" rows="2" placeholder="Message"></textarea>
+          <div class="row g-2">
+            <div class="col"><input id="cle-cesar" type="number" class="form-control" placeholder="Clé (1 à 25)"></div>
+            <div class="col-auto"><button id="btn-chiffrer" class="btn btn-success">Chiffrer</button></div>
+            <div class="col-auto"><button id="btn-dechiffrer" class="btn btn-outline-success">Déchiffrer</button></div>
+          </div>
+          <div id="res-cesar" class="d-none"></div>
+        </div></div>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/outils.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
